@@ -2,6 +2,12 @@
 
 This is a temporary document for taking notes, jotting ideas and writing key principles.
 
+## References
+
+- Guide: https://microsoft365dsc.com/user-guide/get-started/integrating-with-azure-devops/
+- Upstream: https://github.com/microsoft/Microsoft365DSC
+- 
+
 ## Key principles
 
 - Microsoft365Dsc is a POSH DSC module. It can configure and manage M365 in a DevOps way - Configuration as Code
