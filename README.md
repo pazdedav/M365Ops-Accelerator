@@ -26,3 +26,12 @@ Enables integration of M365Dsc with GitHub to deliver GitOps-based M365 manageme
   - add a data file to DataFiles folder for each tenant + update correct info
   - add secrets in AKV for that tenant (env.)
   - add new stage to the Release pipeline (Environment parameter), use Azure POSH step
+ 
+## Deployment
+1. Prereqs - account(s) with permissions
+2. Create a new GH repo from my template
+3. Create GH secrets using GH CLI
+4. Run the Bootstrap workflow
+   - runs the Bicep solution module deployment - GH runner + other resources on Azure + configuration / registration
+   - runs the M365Dsc pull from the 'connected tenant'
+   - **TIP:** Use AZD CLI to deal with prereqs!
